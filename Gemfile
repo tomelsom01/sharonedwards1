@@ -77,3 +77,6 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+# Use Cloudinary for image upload
+gem "cloudinary"
