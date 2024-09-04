@@ -63,3 +63,45 @@
       <%= cl_image_tag("mapOfSutton_hzcwqc") %>
   </div>
 </div>
+<div class="d-flex justify-content-center">
+ <h2>Contact</h2>
+</div>
+<div class="container mt-2 pb-4">
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Please complete the form and we’ll give you a call so you can ask us any questions you might have.</p>
+      <p>We look forward to hearing from you and about your business.</p>
+    </div>
+    <div class="contactform col-sm-6">
+      <%= form_with model: @contact, url: contacts_path, local: true do |f| %>
+        <div class="form-group">
+          <%= f.label :name %>
+          <%= f.text_field :name, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :email %>
+          <%= f.email_field :email, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :phone %>
+          <%= f.text_field :phone, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :message %>
+          <%= f.text_area :message, class: 'form-control' %>
+        </div>
+        <%= f.submit 'Send', class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<% if @contact.errors.any? %>
+  <div class="alert alert-danger">
+    <h4>There were some errors with your submission:</h4>
+    <ul>
+      <% @contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
