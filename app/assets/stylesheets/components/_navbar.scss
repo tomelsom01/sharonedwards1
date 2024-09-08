@@ -48,14 +48,12 @@
   color: #ccc; /* Hover color */
 }
 
-@media (min-width: 991px) {
-  .smallscreendisplay {
-    display: none;
-  }
-
+.navbar-collapse.position-absolute {
+  background-color: #343a40;
+  border-radius: 0.25rem;
+  padding: 1rem; /* Add padding for better spacing */
 }
-@media (max-width: 991px) {
-  .largescreendisplay {
-    display: none;
-  }
+
+.navbar-collapse.bg-dark {
+  border-top: 1px solid #444; /* Optional border for separation */
 }
