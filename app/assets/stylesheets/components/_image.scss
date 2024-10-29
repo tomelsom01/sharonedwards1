@@ -32,3 +32,16 @@
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
+@media (max-width: 768px) {
+  #navimage{
+    display: none;
+  }
+  .profilepic{
+    width: 30vw;
+    height: 30vw;
+  }
+  .imagetext{
+    width: 50vw;
+  }
+}
