@@ -13,6 +13,17 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
+.aboutcard{
+  width: 100%;
+  background-image: url("https://res.cloudinary.com/daaxwngzv/image/upload/v1733945738/limitlesstransformation_of4fse.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px;
+  margin: auto;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
 .contactcard {
   background-color: #fff;
   border-radius: 10px;
@@ -24,6 +35,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+}
+
+@media(min-width: 768px) {
+  .postionmain{
+    padding-left: 10%;
+  }
 }
 
 @media(max-width: 768px) {

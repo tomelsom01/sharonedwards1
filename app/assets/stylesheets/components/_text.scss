@@ -1,0 +1,22 @@
+.maintext {
+   font-size: 3.13rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-shadow: 0 0.19rem 0.38rem rgba(0, 0, 0, 0.16);
+    line-height: 3.44rem;
+    color: #ffffff;
+}
+
+.maincontain{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+}
+
+.abouttext{
+  color: #ffffff;
+  font-size: 1.3;
+  font-weight: 600;
+  text-shadow: 0 0.19rem 0.38rem rgba(0, 0, 0, 0.16);
+}

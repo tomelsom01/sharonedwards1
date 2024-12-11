@@ -4,7 +4,7 @@
 
 .mainimage {
   width: 100%;
-  height: 20vh;
+  height: 60vh;
   background-image: url("https://res.cloudinary.com/daaxwngzv/image/upload/v1725226351/theraputicwater_ojzjrj.jpg");
   background-size: cover;
   background-position: center;
@@ -12,8 +12,8 @@
 }
 
 .profilepic{
-  width: 15vw;
-  height: 15vw;
+  width: 20vw;
+  height: 20vw;
   border-radius: 50%;
   margin: 0 auto;
   display: block;
@@ -43,5 +43,8 @@
   }
   .imagetext{
     width: 50vw;
+  }
+  .mainimage {
+    height: 50vh; /* Adjust height for smaller screens */
   }
 }
