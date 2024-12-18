@@ -81,7 +81,4 @@ end
 # Use Cloudinary for image upload
 gem "cloudinary"
 
-# Use Geocoder for geolocation
-gem "geocoder"
 
-gem 'mapkick-rb'

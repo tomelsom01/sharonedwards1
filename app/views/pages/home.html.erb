@@ -1,23 +1,27 @@
 <div class="mainbackground">
   <div class="mainimage maincontain">
 
-      <div class="postionmain">
-        <h1 class="maintext">Musculoskeletal & Sports/ Women’s & Men's Health Physiotherapist & Expert Witness</h1>
-        <a class="button-36" href="#section2">Contact me</a>
+      <div class="banner">
+        <div class="banner-content">
+            <h1 class="maintext">Musculoskeletal & Sports/ Women's & Men's Health Physiotherapist & Expert Witness</h1>
+            <a class="button-36" href="#section2">Contact me</a>
+        </div>
       </div>
+
 
   </div>
   <div class="aboutcard pt-5 pb-3">
       <div class="maincards pb-3">
         <div>
           <h2 class="abouttext container">About Sharon</h2>
-          <p class="abouttext container">Sharon started her physiotherapy journey some 30 years ago, training at Kings College, London, completing her Honours program in physiotherapy. After some years working in the NHS and private practice she embarked on two postgraduate Masters at the University of Queensland, in Australia, in Manipulative Physiotherapy and Sports Physiotherapy. Following this she stayed in Brisbane and developed and expanded several private practises with a multidisciplinary team of health professionals. One clinic also included driving a converted motorhome, with 3 treatment rooms, to rural locations, to deliver physiotherapy to a rural community.</p>
+          <p class="abouttext container">Sharon started her physiotherapy journey some 30 years ago, training at Kings College, London, completing her Honours program in physiotherapy. After some years working in the NHS and private practice she embarked on two postgraduate Masters at the University of Queensland, in Australia, in Manipulative Physiotherapy and Sports Physiotherapy. Following this she stayed in Brisbane and developed and expanded several private practises with a multidisciplinary team of health professionals. One clinic also included driving a converted motorhome, with 3 treatment rooms, to rural locations, to deliver physiotherapy to a rural community. </p> <p class="abouttextbutton container" data-bs-toggle="modal" data-bs-target="#reg-modal1">Read more.....</p>
+
       </div>
       <div>
         <%= cl_image_tag "sharonedwardsProfilePic_odloe8", class: "profilepic", alt: "Sharon Edwards Profile Picture" %>
       </div>
     </div>
-    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#reg-modal1">Read More</button>
+
   </div>
 
 
@@ -26,9 +30,10 @@
   <h2 id="section1">Areas</h2>
   </div>
   <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+    <div class="areacards">
+
         <div class="maincard">
+          <%= cl_image_tag "entrance_parkshot_house_mpjo5v", class: "cardimage", alt: "Absolute Health & Physio" %>
           <h3>Absolute Health & Physio</h3>
           <p>Parkshot House</p>
           <p>5 Kew Road</p>
@@ -36,8 +41,9 @@
           <p>TW9 2PR</p>
           <button class="btn btn-primary">call to action</button>
         </div>
-          <br/>
+
         <div class="maincard">
+          <%= cl_image_tag "whitehartclinicimage_c30q9v", class: "cardimage", alt: "White Hart Clinic" %>
           <h3>White Hart Clinic</h3>
           <p>10 White Hart Lane</p>
           <p>Barnes</p>
@@ -45,23 +51,19 @@
           <p>SW13 0PY</p>
           <button class="btn btn-primary">call to action</button>
         </div>
-          <br/>
+
         <div class="maincard">
+          <%= cl_image_tag "lambert2_obze77", class: "cardimage", alt: "Lambert Sports Clinic" %>
           <h3>Lambert Sports Clinic</h3>
           <p>380 Ewell Road</p>
           <p>Surbiton</p>
           <p>KT6 7BE</p>
           <button class="btn btn-primary">call to action</button>
         </div>
-          <br/>
-      </div>
-      <div class="col-6">
-        <%= cl_image_tag("mapOfSutton_hzcwqc", class:"mapimage", alt: "map of london") %>
-    </div>
-
 
   </div>
-  
+
+
 </div>
   <div class="d-flex justify-content-center">
   <h2 id="section2">Contact</h2>
