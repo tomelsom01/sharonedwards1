@@ -16,7 +16,7 @@
   transition-delay: 0.2s;
 }
 .navimage{
-  width: 20vh;
+  width: 10vh;
   height: 10vh;
 }
 .navlink{
@@ -92,4 +92,17 @@
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.navbackground{
+  background-color: #08598E;
+}
+
+.navhover{
+  transition: color 0.5s;
+  border: 1px solid #000;
+}
+
+.navhover:hover{
+  color: #043657;
 }

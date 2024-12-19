@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark bg-dark sticky-top">
+<nav class="navbar navbackground sticky-top">
   <div class="container-fluid">
     <div class="d-flex justify-content-between align-items-center w-100 position-relative">
       <!-- Navbar Brand -->
@@ -6,21 +6,20 @@
 
       <!-- Logo Image -->
       <div>
-        <%= cl_image_tag("Screenshot_2024-12-16_183120_ypek4j", class: "navimage", alt: "physiologo") %>
+        <%= cl_image_tag("smallphysiologo_guh6xp", class: "navimage", alt: "physiologo") %>
       </div>
 
       <!-- Toggler Button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" data-bs-auto-close="outside" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navhover" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" data-bs-auto-close="outside" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
 
     <!-- Full-width Dropdown Menu -->
-    <div class="collapse navbar-collapse bg-dark w-100" id="navbarNavDarkDropdown" style="position: absolute; top: 100%; left: 0; right: 0; z-index: 1000;">
+    <div class="collapse navbar-collapse navbackground w-100" id="navbarNavDarkDropdown" style="position: absolute; top: 100%; left: 0; right: 0; z-index: 1000;">
       <ul class="navbar-nav d-flex justify-content-center ps-3 pb-3">
         <li><a class="nav-item nav-link navlink hover-underline-animation" href="#section1">Areas</a></li>
         <li><a class="nav-item nav-link navlink hover-underline-animation" href="#section2">Contact</a></li>
-        <li><a class="nav-item nav-link navlink hover-underline-animation" href="#">Rent a Room</a></li>
       </ul>
     </div>
   </div>
