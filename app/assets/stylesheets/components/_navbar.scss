@@ -57,7 +57,8 @@
 }
 
 .nav-item a:hover {
-  color: #ccc; /* Hover color */
+  color: #d08f2d; /* Hover color */
+  text-shadow: 2px 2px #000;
 }
 
 .navbar-collapse.position-absolute {
@@ -84,7 +85,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #6f6253;
+  background-color: #48423a;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
