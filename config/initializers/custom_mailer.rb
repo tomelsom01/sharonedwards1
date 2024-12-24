@@ -5,6 +5,8 @@ class CustomMailer < Mail::SMTP
     else
       mail.delivery_method.settings[:domain] = 'physiotherapyrichmond.co.uk'
     end
+    # Use the SMTP settings from production.rb
+    mail.delivery_method.settings.merge!(ActionMailer::Base.smtp_settings)
     super
   end
 end
