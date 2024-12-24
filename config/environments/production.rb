@@ -93,13 +93,13 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.default_url_options = { host: ' https://sharonphysio-780a10cb6a10.herokuapp.com/' }
-  config.action_mailer.smtp_settings = {
-    address: 'smtp.gmail.com',
-    port: 587,
-    user_name: ENV.fetch('SMTP_USERNAME'),
-    password: ENV.fetch('SMTP_PASSWORD'),
-    authentication: 'plain',
-    enable_starttls_auto: true
-  }
+  config.action_mailer.default_url_options = { host: 'physiotherapyrichmond.co.uk' }
+config.action_mailer.smtp_settings = {
+  address: 'smtp.office365.com',
+  port: 587,
+  user_name: ENV.fetch('SMTP_USERNAME'),
+  password: ENV.fetch('SMTP_PASSWORD'),
+  authentication: 'login',
+  enable_starttls_auto: true
+}
 end
