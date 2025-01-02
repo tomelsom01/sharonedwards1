@@ -1,9 +1,13 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'your-email@example.com'
-  layout 'mailer'
+  def send_email(email)
+    @email = email
 
-  def mail(headers = {})
-    headers[:delivery_method] = :custom_smtp
-    super
+    mail(to: 'te28@hotmail.com', subject: 'New Email Inquiry') do |format|
+      format.html
+      format.text
+    end
+    mail.reply_to = @email.email
   end
+
+  layout "mailer"
 end
