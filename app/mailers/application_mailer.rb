@@ -2,7 +2,7 @@ class ApplicationMailer < ActionMailer::Base
   def send_email(email)
     @email = email
 
-    mail(to: 'brisbanephysio@hotmail.co.uk', subject: 'New Email Inquiry') do |format|
+    mail(to: 'te28@hotmail.com', subject: 'New Email Inquiry') do |format|
       format.html
       format.text
     end
