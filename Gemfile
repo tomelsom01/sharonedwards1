@@ -81,4 +81,5 @@ end
 # Use Cloudinary for image upload
 gem "cloudinary"
 
-
+# Seo tags
+gem 'meta-tags'
