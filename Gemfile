@@ -83,3 +83,4 @@ gem "cloudinary"
 
 # Seo tags
 gem 'meta-tags'
+gem 'sitemap_generator'

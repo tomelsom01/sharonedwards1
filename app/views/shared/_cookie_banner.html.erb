@@ -1,0 +1,17 @@
+<div id="cookie-banner">
+  <p>We use cookies to improve your experience. By using our site, you agree to our <a href="/cookie-policy">Cookie Policy</a>.</p>
+  <button id="accept-cookies">Accept</button>
+  <button id="reject-cookies">Reject</button>
+</div>
+
+<script>
+  document.getElementById("accept-cookies").addEventListener("click", () => {
+    fetch("/cookies/accept", { method: "POST", headers: { "X-CSRF-Token": "<%= form_authenticity_token %>" } })
+      .then(() => location.reload());
+  });
+
+  document.getElementById("reject-cookies").addEventListener("click", () => {
+    fetch("/cookies/reject", { method: "POST", headers: { "X-CSRF-Token": "<%= form_authenticity_token %>" } })
+      .then(() => location.reload());
+  });
+</script>
