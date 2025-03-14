@@ -16,11 +16,7 @@
     <%= render partial: "layouts/partials/nav" %>
     <%= render "shared/flashes" %>
     <%= yield %>
-    <%= render partial: "layouts/partials/footer" %>
     <%= render "shared/cookie_banner" unless session[:cookies_accepted] %>
-
-    <!-- Add nonce to external script -->
-    
-
+    <%= render partial: "layouts/partials/footer" %>
   </body>
 </html>
