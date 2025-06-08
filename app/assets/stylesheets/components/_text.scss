@@ -97,3 +97,25 @@
 .textwhite{
   color: white;
 }
+
+.specborder{
+  border: 1px solid #00d084;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #00d084; /* Light background for contrast */
+}
+
+.boldtext{
+  font-weight: bold;
+  color: #333; /* Dark text for better readability */
+  font-size: clamp(1.5rem, 5vw, 3rem); /* Slightly larger font size */
+  text-shadow: 0 0.19rem 0.38rem rgba(0, 0, 0, 0.16); /* Subtle shadow for depth */
+  margin-bottom: 1rem; /* Spacing between elements */
+}
+
+.bantext {
+  font-size: clamp(0.7rem, 4vw, 1.2rem); /* Responsive font size */
+  color: #333; /* Dark text for better readability */
+  margin-top: 1rem; /* Spacing above the text */
+  padding-bottom: 1rem; /* Spacing below the text */
+}
