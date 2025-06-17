@@ -84,3 +84,6 @@ gem "cloudinary"
 # Seo tags
 gem 'meta-tags'
 gem 'sitemap_generator'
+
+# Use Recaptcha for spam protection
+gem "recaptcha", require: "recaptcha/rails"
