@@ -1,5 +1,5 @@
 class ContactMailer < ApplicationMailer
-  default to: 'brisbanephysio@hotmail.co.uk'
+  default to: 'te28@hotmail.com'
 
   def contact_email(contact)
     @contact = contact
