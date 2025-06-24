@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get '/appointments', to: 'appointments#index'
   post "/cookies/accept", to: "cookies#accept"
   post "/cookies/reject", to: "cookies#reject"
-  get 'about', to: 'pages#about'
+  get '/pessary_fitting', to: 'pages#about'
 
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
