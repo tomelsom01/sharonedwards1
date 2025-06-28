@@ -25,6 +25,11 @@
   border: 1px solid grey;
   border-radius: 10px;
   padding: 5px;
+  flex: 1 1 120px; /* Grow, shrink, min width */
+  text-align: center;
+  min-width: 90px;
+  max-width: 100px;
+  white-space: nowrap; /* Prevent breaking day names */
 }
 
 .daysdatesred {
@@ -118,4 +123,10 @@
   color: #333; /* Dark text for better readability */
   margin-top: 1rem; /* Spacing above the text */
   padding-bottom: 1rem; /* Spacing below the text */
+}
+@media (max-width: 480px) {
+  .daysdates {
+    font-size: 0.95em;
+    padding: 4px 0;
+  }
 }
