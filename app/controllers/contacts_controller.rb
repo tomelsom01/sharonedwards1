@@ -1,7 +1,7 @@
 class ContactsController < ApplicationController
   def create
     # Add reCAPTCHA verification first
-    unless verify_recaptcha(action: 'contact', minimum_score: 0.7)
+    unless verify_recaptcha(action: 'contact', minimum_score: 0.3)
       Rails.logger.error "reCAPTCHA failed: #{request.remote_ip} - Score: #{recaptcha_reply['score']}"
       flash[:alert] = "Failed CAPTCHA verification. Please try again."
       redirect_to root_path
