@@ -37,7 +37,7 @@
           <%= cl_image_tag "entrance_parkshot_house_mpjo5v", class: "cardimage", alt: "Absolute Health & Physio" %>
           <h3>Absolute Health & Physio</h3>
           <p class="pb-1">Available on:</p>
-          
+
           <div class="daysOfWeek">
             <p class="daysdates">Monday</p><p class="daysdates">Wednesday</p><p class="daysdates">Thursday</p><p class="daysdates">Friday</p><p class="daysdates">Saturday</p><p class="daysdates">Sunday</p>
           </div>
@@ -86,6 +86,7 @@
       </div>
       <div class="contactform col-lg-6 col-md-6 col-sm-12 col-12">
         <%= form_with model: @contact, url: contacts_path, local: true do |f| %>
+        <%= recaptcha_v3(action: 'contact', site_key: ENV['RECAPTCHA_SITE_KEY']) %>
           <div class="form-group">
             <%= f.label :name %>
             <%= f.text_field :name, class: 'form-control', placeholder: "enter name" %>
@@ -102,6 +103,7 @@
             <%= f.label :message %>
             <%= f.text_area :message, class: 'form-control', placeholder: "enter a short message" %>
           </div>
+
           <%= f.submit 'Send', class: "button-36" %>
         <% end %>
       </div>

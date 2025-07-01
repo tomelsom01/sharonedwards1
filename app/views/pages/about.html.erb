@@ -248,6 +248,7 @@
       </div>
       <div class="contactform col-lg-6 col-md-6 col-sm-12 col-12">
         <%= form_with model: @contact, url: contacts_path, local: true do |f| %>
+        <%= recaptcha_v3(action: 'contact', site_key: ENV['RECAPTCHA_SITE_KEY']) %>
           <div class="form-group">
             <%= f.label :name %>
             <%= f.text_field :name, class: 'form-control', placeholder: "enter name" %>
@@ -264,6 +265,7 @@
             <%= f.label :message %>
             <%= f.text_area :message, class: 'form-control', placeholder: "enter a short message" %>
           </div>
+
           <%= f.submit 'Send', class: "button-36" %>
         <% end %>
       </div>

@@ -1,20 +1,26 @@
 class ContactsController < ApplicationController
   def create
+    # Add reCAPTCHA verification first
+    unless verify_recaptcha(action: 'contact', minimum_score: 0.7)
+      Rails.logger.error "reCAPTCHA failed: #{request.remote_ip} - Score: #{recaptcha_reply['score']}"
+      flash[:alert] = "Failed CAPTCHA verification. Please try again."
+      redirect_to root_path
+      return  # Exit early on failure
+    end
+
     @contact = Contact.new(contact_params)
 
     if @contact.save
       begin
-        # Send the email after saving the contact
         ContactMailer.contact_email(@contact).deliver_now!
-        flash[:notice] = "Thank you for your message. We will get back to you soon!"
+        flash[:notice] = "Thank you for your message! We'll contact you soon."
       rescue => e
-        Rails.logger.error "Failed to send email: #{e.message}"
-        flash[:alert] = "Your message was saved, but there was an error sending the notification email."
+        Rails.logger.error "Email failed: #{e.message}"
+        flash[:alert] = "Message saved, but email notification failed."
       end
       redirect_to root_path
     else
-      # Render the home page with errors if the contact fails to save
-      flash[:alert] = "There was an error saving your message. Please try again."
+      flash[:alert] = "Error saving message. Please check your inputs."
       redirect_to root_path
     end
   end
