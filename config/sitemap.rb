@@ -1,6 +1,6 @@
 require 'sitemap_generator'
 
-SitemapGenerator::Sitemap.default_host = "https://www.physiotherapyrichmond.co.uk"
+SitemapGenerator::Sitemap.default_host = "https://www.absolutehealthandphysio.co.uk/"
 SitemapGenerator::Sitemap.public_path = 'public/'
 SitemapGenerator::Sitemap.create_index = true
 
