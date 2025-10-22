@@ -23,3 +23,4 @@
 #   # Report violations without enforcing the policy.
 #   # config.content_security_policy_report_only = true
 # end
+policy.script_src :self, :https, "https://www.googletagmanager.com", "https://www.google-analytics.com"
