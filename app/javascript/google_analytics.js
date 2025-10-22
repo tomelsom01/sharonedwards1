@@ -1,4 +1,5 @@
 // Google Analytics (GA4) safe loader for Rails + Turbo
+
 (function loadGoogleAnalytics() {
   try {
     // Only load once
